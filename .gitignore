@@ -4,6 +4,3 @@ Custom/.terraform
 Custom/.terraform.lock.hcl
 *.exe
 **\.terraform\
-Day-1\PROJECT-ec2-instance-creation\.terraform
-Day-1/PROJECT-ec2-instance-creation/.terraform/providers/registry.terraform.io/hashicorp/aws/5.74.0/windows_386/terraform-provider-aws_v5.74.0_x5.exe
-Day-1\PROJECT-ec2-instance-creation\.terraform\providers\registry.terraform.io\hashicorp\aws\5.74.0\windows_386\terraform-provider-aws_v5.74.0_x5.exe
