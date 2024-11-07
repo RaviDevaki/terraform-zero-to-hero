@@ -1,5 +1,7 @@
 **/.terraform/
 Day-1/PROJECT-ec2-instance-creation/.terraform
+Custom/.terraform
+Custom/.terraform.lock.hcl
 *.exe
 **\.terraform\
 Day-1\PROJECT-ec2-instance-creation\.terraform
