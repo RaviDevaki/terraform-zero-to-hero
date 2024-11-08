@@ -9,15 +9,15 @@ data "aws_security_group" "securitygroupid" {
 }
 
 
-resource "aws_instance" "mainTestingServer" {
-  ami = "ami-0eaf7c3456e7b5b68"
+resource "aws_instance" "TerraformDockerMaster" {
+  ami = "ami-0e86e20dae9224db8"
   instance_type = "t2.micro"
   subnet_id = "subnet-001d928ebed7a3bf9"
   key_name = "Layer01"
   security_groups = [data.aws_security_group.securitygroupid.id]
   tags = {
-    Name = "mainTestingServer"
+    Name = "TerraformDockerMaster"
   }
+  user_data = file("docker.sh")
 
 }
-# Fetch IP address of New EC2 instance, write to ansible host file
