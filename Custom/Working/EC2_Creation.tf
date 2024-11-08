@@ -1,11 +1,3 @@
-terraform {
-  backend "s3" {
-    bucket = "raviawsterraformstatefile"
-    key = "statefile"
-    region = "us-east-1"
-
-  }
-} 
 provider "aws" {
   region = "us-east-1" # specify the region via Code
 }
@@ -21,7 +13,7 @@ output "security_group_id" {
   value = data.aws_security_group.securitygroupid.id
 }
 
-resource "aws_instance" "TestServer" {
+resource "aws_instance" "TestedServer" {
   ami = "ami-0eaf7c3456e7b5b68"
   instance_type = "t2.micro"
   subnet_id = "subnet-001d928ebed7a3bf9"
